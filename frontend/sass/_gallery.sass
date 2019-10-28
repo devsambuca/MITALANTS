@@ -1,0 +1,172 @@
+.gallery
+  padding-top: 100px
+  &-nav-categories
+    display: grid  
+  @media(max-width: 768px)
+    padding-top: 60px
+  &-nav
+    display: grid
+    margin: 0 auto
+    grid-template-columns: 100px 142px 142px 100px
+    grid-template-rows: 109px
+    @media(max-width: 576px)
+      display: flex
+      flex-direction: column
+    .nav__item
+      justify-self: center
+      align-self: center
+      padding: 16px 30px
+      font-size: 12px
+      font-weight: 700
+      color: #696970
+      &:hover
+        cursor: pointer
+        font-family: 'Nunito - Extra-Bold', sans-serif
+        font-weight: 900
+        color: #1a1a1d
+        border-bottom: 2px solid #696970
+  &-btn
+    font-family: 'Nunito', sans-serif
+    color: #ffffff
+    font-size: 14px
+    padding: 20px 41px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 2.8px
+    border-radius: 30px
+    border: none
+    background: #b4d3d3
+    &:hover
+      background: #b4d3d3 * 0.9
+      cursor: pointer
+  &-wrapper
+    width: 93.45%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    @media(max-width: 992px)
+      grid-template-columns: repeat(2, 1fr)
+    @media(max-width: 576px)
+      display: block
+      margin: 0 auto
+    @media(max-width: 1920px)  
+      img
+        max-width: 100%   
+  &-slider
+    width: 93.45%
+    margin: 0 auto 
+    @media(max-width: 1919px)
+      img
+        max-width: 100%
+.slider-line
+  display: block
+  width: 100%
+// .slick-slide .slick-current 
+//   .slick-active
+//     &::before
+//       content: ""
+//       position: absolute
+//       width: 100%
+//       height: 100%
+//       top: 0
+//       left: 0
+//       background-color: rgba(0,0,0,.7)
+
+//   h5, small
+//     visibility: visible
+
+.block
+  z-index: 0
+  position: relative
+  max-width: 100%
+.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9
+  background: #e2e8e8
+  @media(max-width: 576px)
+    margin-bottom: 15px
+  h5
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -72px
+    margin-top: 30%
+    visibility: hidden
+    color: #ffffff
+    font-family: Poppins
+    font-size: 30px
+    font-weight: 400
+    letter-spacing: 0.6px
+  small
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -41px
+    margin-top: 43%
+    visibility: hidden
+    color: #aeaeb7
+    font-family: "Nunito"
+    font-size: 12px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 2.4px
+  .categories-share 
+    visibility: hidden
+    background-color: #b4d3d3
+    width: 50px
+    height: 50px
+    text-align: center
+    text-transform: uppercase
+    border-radius: 100%
+    position: absolute
+    right: 10px
+    top: 10px
+    color:#ffffff
+    font-size: 20px
+    padding-top: 10px
+    transform: rotate(-45deg)
+  &:hover
+    cursor: pointer
+    h5, small,.categories-share 
+      visibility: visible
+    &::before
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: rgba(0,0,0,.7)
+
+.fa-arrow-up
+  position: relative
+  &:before
+    content: "\f061"
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    text-decoration: inherit
+    color: #ffffff
+    font-size: 24px
+    padding-right: 0.5em
+    position: absolute
+    top: 3px
+    left: -11px
+
+
+.item1
+  display: grid
+  grid-column: span 4
+  justify-self: center
+.item10
+  display: grid
+  grid-column: span 4
+  padding-top: 60px
+  justify-self: center
+  @media(max-width: 576px)
+    padding-top: 30px
+  
+    
+
+      
+
+
+

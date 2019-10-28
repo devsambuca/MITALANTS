@@ -1,0 +1,44 @@
+.footer
+  padding-top: 169px
+  &-mail
+    padding-left: 15px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    grid-template-rows: 120px 62px
+    @media(max-width: 1200px)
+      grid-template-rows: 100px 52px
+    @media(max-width: 992px)
+      grid-template-rows: 80px 42px
+    @media(max-width: 765px)
+      display: flex
+      flex-direction: column
+  &__logo 
+    @media(max-width: 768px)
+      margin-bottom: 15px
+    .logo__img
+      width: 30%
+      
+  &__info-2,&-info-3
+    justify-self: end
+    @media(max-width: 765px)
+      justify-self: center
+  &__info-2
+    margin-bottom: 15px
+  &__info-1
+    @media(max-width: 765px)
+      order: 4  
+  &-social
+    display: grid
+    grid-template-columns: repeat(4, minmax(50px, 60px))
+    li 
+      justify-self: end
+      @media(max-width: 765px)
+        justify-self: start
+    @media(max-width: 765px)
+      margin-bottom: 15px 
+      justify-self: center
+.footer-wrapper>div,h2
+  @media(max-width: 765px)
+      justify-self: center
+    
